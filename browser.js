@@ -36,10 +36,6 @@ onload = function() {
       }
     });
 
-  document.querySelector('#terminate').onclick = function() {
-    webview.terminate();
-  };
-
   document.querySelector('#location-form').onsubmit = function(e) {
     e.preventDefault();
     navigateTo(document.querySelector('#location').value);
